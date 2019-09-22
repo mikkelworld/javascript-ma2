@@ -1,10 +1,19 @@
 //MODULE ASSIGNMENT 2 - LEVEL 1
 
 1. What is a function literal?
+A function literal is an function defined through a function expression as opposed to a function statement. A function literal is also unnamed, which is not allowed in function statements.
+Function literals are declared at runtime, and due to the fact that they are assigned to a variable or passed as an argument, they are not available in the scope until assigned, unlike function statements.
 
 2. What is the constructor?
+The constructor is the initial function run when creating an instance of a class, or object in this case.
+It can take a set or arguments when creating the class which in turn can be used inside the constructor in order to set up the class for further functionality.
+Commonly it is used to assign values to variables in the class scope so that they are ready to be used with the class functions from the get-go.
 
 3. What does the return statement do?
+The return statement returns a value to the caller of a function.
+It's an incredibly useful and vital part of functions as it lets you reuse code more. 
+By taking advantage of the return statement, you can create a complex function that manipulates data and returns the result of this manipulation.
+This saves you from having to manipulate the data in the original function and makes your entire code more reusable and scalable.
 
 4. What will be written to the console from this function:
 		function myFunction(){
@@ -12,6 +21,9 @@
 			  console.log('My name is Andy');
 		}
 		myFunction();
-
+The function will return and therefore exit the function scope before it reaches "My name is Andy". Therefore it will write "inside my function" to the console.
 
 5. Briefly describe scope in JavaScript.
+The scope is the context in which your code runs. 
+A function for example has its own scope which means that variables defined within that function are not accessible outside of it.
+The function does however have access to variables defined in its parent scope, for example the global scope, which is accessible to the entire script.
